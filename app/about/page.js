@@ -201,11 +201,11 @@ function About() {
           <br /> <br />
         </p>
       </div>
-      <div>
-        {/* <Image src={image2} width={120} height={100} alt="nono" ></Image>
-        <Image src={image3} width={120} height={100} alt="nono" ></Image> */}
+      {/* <div>
+        <Image src={image2} width={120} height={100} alt="nono" ></Image>
+        <Image src={image3} width={120} height={100} alt="nono" ></Image>
         <Slider list={imgList} />
-      </div>
+      </div> */}
     </section>
   );
 }
