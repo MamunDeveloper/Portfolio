@@ -14,6 +14,7 @@ export default function Home() {
         </p>
         <Image
           className={"pictures"}
+          id={styles.profilePic}
           src={HomeImage}
           alt="Next.js Logo"
           width={500}

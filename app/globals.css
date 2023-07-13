@@ -89,7 +89,7 @@ body {
   color: white;
   background-color: #21084b;
 }
-.sepDiv{
+.sepDiv {
   margin-bottom: 8rem;
 }
 
@@ -98,10 +98,10 @@ body {
   word-spacing: 3px;
   text-align: justify;
 }
-.textCenter{
+.textCenter {
   text-align: center;
 }
-.points{
+.points {
   color: #20d907;
 }
 
@@ -109,7 +109,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: red;
 }
 
@@ -126,5 +126,11 @@ a:hover{
   }
   .justifyText {
     word-wrap: 2px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .pictures {
+    margin-bottom: 3rem;
   }
 }

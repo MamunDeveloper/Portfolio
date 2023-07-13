@@ -41,11 +41,6 @@
   }
 }
 
-@media screen and (max-width: 970px) {
-  .homePic {
-    margin-bottom: 3rem;
-  }
-}
 @media screen and (max-width: 320px) {
   .homePic {
     width: 150px;
