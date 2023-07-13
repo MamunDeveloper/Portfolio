@@ -34,7 +34,7 @@ function About() {
             on an exhilarating journey through the digital realm and witness the
             power of code brought to life.
           </p>
-          <Image src={HomeImage} width={250} height={250} alt="Intro Image" />
+          <Image className="pictures" src={HomeImage} width={250} height={250} alt="Intro Image" />
         </div>
       </div>
       <div id={styles.skillsIntro} className={`sepDiv`}>
@@ -159,53 +159,53 @@ function About() {
         <h2>How I Approach a project</h2>
         <h3>My methodology</h3>
         <p className="justifyText">
-          <b>User-Centric Focus : </b>In every web development project, I place
+          <b className="points">User-Centric Focus : </b>In every web development project, I place
           a strong emphasis on a user-centric focus, meticulously designing and
           optimizing the user experience to ensure seamless navigation and
           maximum engagement.
           <br /> <br />
-          <b> Strategic Solutions : </b>With a strategic solutions-oriented
+          <b className="points"> Strategic Solutions : </b>With a strategic solutions-oriented
           approach, I analyze requirements, leverage cutting-edge technologies,
           and implement robust frameworks to deliver scalable, tailored web
           solutions that align with clients' goals. <br />
           <br />
-          <b>Design-Driven Development : </b>I adhere to the design principles
+          <b className="points">Design-Driven Development : </b>I adhere to the design principles
           to develop visually stunning websites with intuitive interfaces and
           engaging interactions, ensuring an enjoyable user experience.
           <br />
           <br />
-          <b>Agile Innovations : </b>Embracing agility, I foster a culture of
+          <b className="points">Agile Innovations : </b>Embracing agility, I foster a culture of
           innovation by continuously adapting, iterating, and implementing
           cutting-edge techniques and technologies to deliver dynamic and
           forward-thinking web solutions.
           <br />
           <br />
-          <b>Code and Creativity : </b>Harmonizing technical prowess with
+          <b className="points">Code and Creativity : </b>Harmonizing technical prowess with
           artistic vision, I fuse elegant code and captivating designs to create
           exceptional digital experiences.
           <br />
           <br />
-          <b>Client-Centered Craftsmanship : </b>I prioritize the client's
+          <b className="points">Client-Centered Craftsmanship : </b>I prioritize the client's
           vision and goals, employing meticulous attention to detail and expert
           craftsmanship to deliver tailored web solutions that exceed
           expectations.
           <br />
           <br />
-          <b>Efficiency and Elegance : </b>Merging streamlined workflows and
+          <b className="points">Efficiency and Elegance : </b>Merging streamlined workflows and
           refined aesthetics for web solutions that optimize user experience.
           <br />
           <br />
-          <b>From Concept to Reality : </b>I bring ideas to life, seamlessly
+          <b className="points">From Concept to Reality : </b>I bring ideas to life, seamlessly
           translating visionary concepts into fully functional web solutions
           through careful planning and skilled execution.
           <br /> <br />
         </p>
       </div>
-      {/* <div>
-        <Image src={image2} width={120} height={100} alt="nono" ></Image>
-        <Image src={image3} width={120} height={100} alt="nono" ></Image>
+      <div>
+        {/* <Image src={image2} width={120} height={100} alt="nono" ></Image>
+        <Image src={image3} width={120} height={100} alt="nono" ></Image> */}
         <Slider list={imgList} />
-      </div> */}
+      </div>
     </section>
   );
 }

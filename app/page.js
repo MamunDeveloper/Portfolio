@@ -13,7 +13,7 @@ export default function Home() {
           <span className={styles.name} > Abdullah Al Mamun </span> <br /> Web developer and designer{" "}
         </p>
         <Image
-          className={styles.logo}
+          className={"pictures"}
           src={HomeImage}
           alt="Next.js Logo"
           width={500}

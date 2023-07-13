@@ -55,3 +55,9 @@
     margin: 1rem 0 0 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #aboutSection {
+    padding: 6rem 2rem;
+  }
+}

@@ -22,6 +22,16 @@
     color: black;
     background-color: rgb(18, 130, 205);
     width: 150px;
-    transform: translate(-100px);
+    transform: translate(-70px);
 }
 
+
+@media screen and (max-width:425px) {
+    .icons_li:hover{
+        transform: translate(-30px);
+    }
+    .icons_ul{
+        top: 40%;
+    }
+
+}

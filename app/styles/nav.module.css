@@ -24,8 +24,14 @@
 }
 
 @media screen and (max-width:425px) {
-  .nav_ul {
-    color: white;
+
+  .navBox {
+    left: 0;
+    width: 98%;
+  }
+
+  .nav_li {
+    margin: auto;
   }
 }
 

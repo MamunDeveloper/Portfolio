@@ -101,6 +101,9 @@ body {
 .textCenter{
   text-align: center;
 }
+.points{
+  color: #20d907;
+}
 
 a {
   color: inherit;
@@ -113,5 +116,15 @@ a:hover{
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* Responsiveness */
+@media screen and (max-width: 320px) {
+  .pictures {
+    width: 150px;
+  }
+  .justifyText {
+    word-wrap: 2px;
   }
 }

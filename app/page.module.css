@@ -34,3 +34,20 @@
     transform: rotate(0deg);
   }
 }
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 6rem 2rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .homePic {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .homePic {
+    width: 150px;
+  }
+}
