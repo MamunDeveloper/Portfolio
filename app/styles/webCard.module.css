@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  word-spacing: 1px;
+}
+.cards .heading{
+    text-align: center;
+}

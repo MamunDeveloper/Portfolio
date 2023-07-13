@@ -1,0 +1,27 @@
+.icons_ul{
+    width: 100px;
+    transform: translateX(50px);
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+.icons_li{
+    text-align: justify;
+    width: 50px;
+    list-style: none;
+    font-size: x-large;
+    margin: 0.5rem 0.2rem;
+    border: 2px solid white;
+    border-right: none;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.8s ease-out;
+    cursor: pointer;
+}
+.icons_li:hover{
+    color: black;
+    background-color: rgb(18, 130, 205);
+    width: 150px;
+    transform: translate(-100px);
+}
+
