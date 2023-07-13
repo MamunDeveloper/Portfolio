@@ -84,6 +84,7 @@ function About() {
               name="vol"
               min="0"
               max="100"
+              readOnly={true}
             />
             <label htmlFor="vol">98%</label>
           </li>
@@ -97,6 +98,7 @@ function About() {
               name="vol"
               min="0"
               max="100"
+              readOnly={true}
             />
             <label htmlFor="vol">96%</label>
           </li>
@@ -109,6 +111,7 @@ function About() {
               name="vol"
               min="0"
               max="100"
+              readOnly={true}
             />
             <label htmlFor="vol">95%</label>
           </li>
@@ -121,6 +124,7 @@ function About() {
               name="vol"
               min="0"
               max="100"
+              readOnly={true}
             />
             <label htmlFor="vol">95%</label>
           </li>
