@@ -2,14 +2,15 @@ import React from "react";
 import styles from "@/app/about/about.module.css";
 // import global from '@/app/page.module.css'
 import Image from "next/image";
-import HomeImage from "@/app/images/pgb-micro.svg";
 import Link from "next/link";
 import WebCard from "../components/webCard";
-import watchFlixImg from "@/app/images/WatchFlix Home Page.png";
+import Slider from "../components/slider";
 
+import profilePic from "@/app/images/Portfolio profile pic.png";
+import watchFlixImg from "@/app/images/WatchFlix Home Page.png";
 import image2 from "@/app/images/img2.jpg";
 import image3 from "@/app/images/owl-face.jpg";
-import Slider from "../components/slider";
+import portfolioImg from "@/app/images/portfolio website ss.png";
 
 function About() {
   const imgList = [image2, image3];
@@ -34,7 +35,13 @@ function About() {
             on an exhilarating journey through the digital realm and witness the
             power of code brought to life.
           </p>
-          <Image className="pictures" src={HomeImage} width={250} height={250} alt="Intro Image" />
+          <Image
+            className="pictures profilePic"
+            src={profilePic}
+            width={380}
+            height={250}
+            alt="Intro Image"
+          />
         </div>
       </div>
       <div id={styles.skillsIntro} className={`sepDiv`}>
@@ -138,14 +145,8 @@ function About() {
           <WebCard
             webLink={"https://watch-flix-new.vercel.app/"}
             webTitle={"WatchFlix"}
-            text={"Movies, shows and series website"}
-            src={watchFlixImg}
-          />
-          <WebCard
-            webLink={"https://watch-flix-new.vercel.app/"}
-            webTitle={"WatchFlix"}
-            text={"Movies, shows and series website"}
-            src={watchFlixImg}
+            text={"My Portfolio website"}
+            src={portfolioImg}
           />
           <WebCard
             webLink={"https://watch-flix-new.vercel.app/"}
@@ -159,52 +160,55 @@ function About() {
         <h2>How I Approach a project</h2>
         <h3>My methodology</h3>
         <p className="justifyText">
-          <b className="points">User-Centric Focus : </b>In every web development project, I place
-          a strong emphasis on a user-centric focus, meticulously designing and
-          optimizing the user experience to ensure seamless navigation and
-          maximum engagement.
+          <b className="points">User-Centric Focus : </b>In every web
+          development project, I place a strong emphasis on a user-centric
+          focus, meticulously designing and optimizing the user experience to
+          ensure seamless navigation and maximum engagement.
           <br /> <br />
-          <b className="points"> Strategic Solutions : </b>With a strategic solutions-oriented
-          approach, I analyze requirements, leverage cutting-edge technologies,
-          and implement robust frameworks to deliver scalable, tailored web
-          solutions that align with clients' goals. <br />
-          <br />
-          <b className="points">Design-Driven Development : </b>I adhere to the design principles
-          to develop visually stunning websites with intuitive interfaces and
-          engaging interactions, ensuring an enjoyable user experience.
+          <b className="points"> Strategic Solutions : </b>With a strategic
+          solutions-oriented approach, I analyze requirements, leverage
+          cutting-edge technologies, and implement robust frameworks to deliver
+          scalable, tailored web solutions that align with clients' goals.{" "}
           <br />
           <br />
-          <b className="points">Agile Innovations : </b>Embracing agility, I foster a culture of
-          innovation by continuously adapting, iterating, and implementing
-          cutting-edge techniques and technologies to deliver dynamic and
-          forward-thinking web solutions.
+          <b className="points">Design-Driven Development : </b>I adhere to the
+          design principles to develop visually stunning websites with intuitive
+          interfaces and engaging interactions, ensuring an enjoyable user
+          experience.
           <br />
           <br />
-          <b className="points">Code and Creativity : </b>Harmonizing technical prowess with
-          artistic vision, I fuse elegant code and captivating designs to create
-          exceptional digital experiences.
+          <b className="points">Agile Innovations : </b>Embracing agility, I
+          foster a culture of innovation by continuously adapting, iterating,
+          and implementing cutting-edge techniques and technologies to deliver
+          dynamic and forward-thinking web solutions.
           <br />
           <br />
-          <b className="points">Client-Centered Craftsmanship : </b>I prioritize the client's
-          vision and goals, employing meticulous attention to detail and expert
-          craftsmanship to deliver tailored web solutions that exceed
-          expectations.
+          <b className="points">Code and Creativity : </b>Harmonizing technical
+          prowess with artistic vision, I fuse elegant code and captivating
+          designs to create exceptional digital experiences.
           <br />
           <br />
-          <b className="points">Efficiency and Elegance : </b>Merging streamlined workflows and
-          refined aesthetics for web solutions that optimize user experience.
+          <b className="points">Client-Centered Craftsmanship : </b>I prioritize
+          the client's vision and goals, employing meticulous attention to
+          detail and expert craftsmanship to deliver tailored web solutions that
+          exceed expectations.
           <br />
           <br />
-          <b className="points">From Concept to Reality : </b>I bring ideas to life, seamlessly
-          translating visionary concepts into fully functional web solutions
-          through careful planning and skilled execution.
+          <b className="points">Efficiency and Elegance : </b>Merging
+          streamlined workflows and refined aesthetics for web solutions that
+          optimize user experience.
+          <br />
+          <br />
+          <b className="points">From Concept to Reality : </b>I bring ideas to
+          life, seamlessly translating visionary concepts into fully functional
+          web solutions through careful planning and skilled execution.
           <br /> <br />
         </p>
       </div>
       <div>
         {/* <Image src={image2} width={120} height={100} alt="nono" ></Image>
         <Image src={image3} width={120} height={100} alt="nono" ></Image> */}
-        <Slider list={imgList} />
+        {/* <Slider list={imgList} /> */}
       </div>
     </section>
   );

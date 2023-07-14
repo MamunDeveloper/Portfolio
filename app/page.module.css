@@ -40,9 +40,3 @@
     padding: 6rem 2rem;
   }
 }
-
-@media screen and (max-width: 320px) {
-  .homePic {
-    width: 150px;
-  }
-}

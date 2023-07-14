@@ -113,6 +113,10 @@ a:hover {
   color: red;
 }
 
+.profilePic {
+  border-bottom: 2px solid #1168d3;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -126,6 +130,10 @@ a:hover {
   }
   .justifyText {
     word-wrap: 2px;
+  }
+  .profilePic {
+    width: 150px;
+    height: 120px;
   }
 }
 
