@@ -21,7 +21,7 @@ function About() {
         <h1>From Vision to Reality</h1>
         <h3>Transforming Ideas into Stunning Websites.</h3>
         <div className={styles.mainIntro}>
-          <p className={styles.introduction}>
+          <p className={`${styles.introduction} pera`}>
             Hi, my name Abdullah Al Mamun. A visionary web developer who
             seamlessly blends artistry with technology. With a keen eye for
             design and an unrivaled passion for crafting exceptional user
@@ -45,7 +45,7 @@ function About() {
         </div>
       </div>
       <div id={styles.skillsIntro} className={`sepDiv`}>
-        <p>
+        <p className="pera">
           {" "}
           <em>
             {" "}
@@ -159,7 +159,7 @@ function About() {
       <div className="textCenter sepDiv">
         <h2>How I Approach a project</h2>
         <h3>My methodology</h3>
-        <p className="justifyText">
+        <p className="justifyText pera">
           <b className="points">User-Centric Focus : </b>In every web
           development project, I place a strong emphasis on a user-centric
           focus, meticulously designing and optimizing the user experience to

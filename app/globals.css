@@ -112,6 +112,9 @@ a {
 a:hover {
   color: red;
 }
+.pera{
+  line-height: 23px;
+}
 
 .profilePic {
   border-bottom: 2px solid #1168d3;
