@@ -184,7 +184,7 @@ a:hover {
     border: none;
   }
 }
-@media screen and (min-width: 260px) {
+@media screen and (max-width: 260px) {
   .testimonialCard {
     width: 204px;
   }
