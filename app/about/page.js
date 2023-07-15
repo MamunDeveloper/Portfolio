@@ -3,18 +3,16 @@ import styles from "@/app/about/about.module.css";
 // import global from '@/app/page.module.css'
 import Image from "next/image";
 import Link from "next/link";
-import WebCard from "../components/webCard";
-import Slider from "../components/slider";
+import Card from "../components/Card";
+import SkillsList from "../components/skillsList";
 
+// Images
 import profilePic from "@/app/images/Portfolio profile pic.png";
 import watchFlixImg from "@/app/images/WatchFlix Home Page.png";
-import image2 from "@/app/images/img2.jpg";
-import image3 from "@/app/images/owl-face.jpg";
 import portfolioImg from "@/app/images/portfolio website ss.png";
+import clientPic1 from "@/app/images/client1.jpg";
 
 function About() {
-  const imgList = [image2, image3];
-
   return (
     <section id={styles.aboutSection} className="justifyText">
       <div id={styles.introBox} className={`sepDiv`}>
@@ -82,59 +80,10 @@ function About() {
         <h2 className="textCenter">My skill's</h2>
         <h3 className="textCenter">My expertise in technologies</h3>
         <ul>
-          <li>
-            <label htmlFor="vol">HTML & CSS</label>
-            <input
-              type="range"
-              id={styles.vol}
-              value={98}
-              name="vol"
-              min="0"
-              max="100"
-              readOnly={true}
-            />
-            <label htmlFor="vol">98%</label>
-          </li>
-
-          <li>
-            <label htmlFor="vol">JavaScript</label>
-            <input
-              type="range"
-              id={styles.vol}
-              value={96}
-              name="vol"
-              min="0"
-              max="100"
-              readOnly={true}
-            />
-            <label htmlFor="vol">96%</label>
-          </li>
-          <li>
-            <label htmlFor="vol">React.js</label>
-            <input
-              type="range"
-              id={styles.vol}
-              value={90}
-              name="vol"
-              min="0"
-              max="100"
-              readOnly={true}
-            />
-            <label htmlFor="vol">95%</label>
-          </li>
-          <li>
-            <label htmlFor="vol">Next.js</label>
-            <input
-              type="range"
-              id={styles.vol}
-              value={90}
-              name="vol"
-              min="0"
-              max="100"
-              readOnly={true}
-            />
-            <label htmlFor="vol">95%</label>
-          </li>
+          <SkillsList skill={"HTML & CSS"} value={98} />
+          <SkillsList skill={"JavaScript"} value={97} />
+          <SkillsList skill={"React.js"} value={95} />
+          <SkillsList skill={"Next.js"} value={95} />
         </ul>
       </div>
 
@@ -142,17 +91,19 @@ function About() {
         <h2 className="textCenter">Webfolio</h2>
         <h3 className="textCenter">A Gallery of Websites Crafted by Me</h3>
         <div id={styles.webCardsBox}>
-          <WebCard
-            webLink={"https://watch-flix-new.vercel.app/"}
-            webTitle={"WatchFlix"}
+          <Card
+            link={"https://portfolio-chi-opal-60.vercel.app/"}
+            Title={"PortFolio"}
             text={"My Portfolio website"}
-            src={portfolioImg}
+            ImageSrc={portfolioImg}
+            cssClass={"webCards"}
           />
-          <WebCard
-            webLink={"https://watch-flix-new.vercel.app/"}
-            webTitle={"WatchFlix"}
+          <Card
+            link={"https://watch-flix-new.vercel.app/"}
+            Title={"WatchFlix"}
             text={"Movies, shows and series website"}
-            src={watchFlixImg}
+            ImageSrc={watchFlixImg}
+            cssClass={"webCards"}
           />
         </div>
       </div>
@@ -205,10 +156,21 @@ function About() {
           <br /> <br />
         </p>
       </div>
-      <div>
-        {/* <Image src={image2} width={120} height={100} alt="nono" ></Image>
-        <Image src={image3} width={120} height={100} alt="nono" ></Image> */}
-        {/* <Slider list={imgList} /> */}
+
+      <div className="sepDiv textCenter" id="testimonialSection">
+        <h2>My clients review</h2>
+        <h3>What they say</h3>
+        <div className="flexBox">
+          <Card
+            link={""}
+            name={"Jack Poul"}
+            text={
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam voluptatibus iusto consectetur quis quae non enim reprehenderit a minus excepturi cumque vero, cum explicabo?"
+            }
+            ImageSrc={clientPic1}
+            cssClass={"testimonialCard"}
+          />
+        </div>
       </div>
     </section>
   );
