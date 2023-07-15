@@ -170,33 +170,6 @@ function About() {
             ImageSrc={clientPic1}
             cssClass={"testimonialCard"}
           />
-          <Card
-            link={""}
-            name={"Jack Poul"}
-            text={
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam voluptatibus iusto consectetur quis quae non enim reprehenderit a minus excepturi cumque vero, cum explicabo?"
-            }
-            ImageSrc={clientPic1}
-            cssClass={"testimonialCard"}
-          />
-          <Card
-            link={""}
-            name={"Jack Poul"}
-            text={
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam voluptatibus iusto consectetur quis quae non enim reprehenderit a minus excepturi cumque vero, cum explicabo?"
-            }
-            ImageSrc={clientPic1}
-            cssClass={"testimonialCard"}
-          />
-          <Card
-            link={""}
-            name={"Jack Poul"}
-            text={
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam voluptatibus iusto consectetur quis quae non enim reprehenderit a minus excepturi cumque vero, cum explicabo?"
-            }
-            ImageSrc={clientPic1}
-            cssClass={"testimonialCard"}
-          />
         </div>
       </div>
     </section>
