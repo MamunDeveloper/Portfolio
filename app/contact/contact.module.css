@@ -1,0 +1,104 @@
+/* .section {
+  background-color: red;
+} */
+#contactSection {
+  padding: 1rem 6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contactSection {
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cards */
+#mapCard {
+  padding: 0;
+  justify-content: center;
+  border: none;
+  background: white
+}
+#meetCard {
+}
+#pitchCard {
+  text-align: start;
+}
+#pitchCard .PitchInps {
+  border: none;
+  outline: none;
+  background: none;
+  color: green;
+  width: 125px;
+}
+
+.PitchInps::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+.contact_form {
+  max-width: 20rem;
+  min-width: 15rem;
+  padding: 25px 3.2rem;
+  box-shadow: rgb(79 79 194 / 38%) 5px 5px 17px;
+  text-align: left;
+  /* margin: auto; */
+  border: 2px solid;
+}
+
+.input_field {
+  margin-bottom: 1rem;
+}
+.formInputs {
+  color: green;
+}
+
+.label {
+  font-size: 1rem;
+  display: block;
+  text-transform: capitalize;
+}
+
+.contact_form input,
+.contact_form textarea {
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.success_msg {
+  color: #a8e48a;
+}
+
+.error_msg {
+  color: red;
+}
+
+.mapping {
+  width: 100%;
+}
+@media screen and (max-width:410px) {
+  .label {
+    /* font-size: 0.5rem; */
+  }
+}
+
+
+/* For FAQ's */
+
+/* .questions{
+  height: 5vh;
+  overflow: hidden;
+  border: 2px solid white;
+} */
