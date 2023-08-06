@@ -2,7 +2,6 @@
   background-color: red;
 } */
 
-
 #contactSection {
   padding: 1rem 6rem;
   text-align: center;
@@ -18,10 +17,11 @@
   padding: 0;
   justify-content: center;
   border: none;
-  background: white
+  background: white;
 }
 
-#meetCard {}
+#meetCard {
+}
 
 #pitchCard {
   text-align: start;
@@ -91,12 +91,18 @@
   width: 100%;
 }
 
-@media screen and (max-width:410px) {
+@media screen and (max-width: 410px) {
   .label {
     /* font-size: 0.5rem; */
   }
 }
 
+@media screen and (max-width: 800px) {
+  #contactPageMap {
+    width: 100vw;
+    height: 33vh;
+  }
+}
 
 /* For FAQ's */
 
