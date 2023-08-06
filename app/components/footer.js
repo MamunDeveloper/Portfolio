@@ -59,14 +59,18 @@ const Footer = () => {
             <ul className={footerStyles.box}>
               <li className={footerStyles.link_name}>Services</li>
               <li>
-                <a href="about">App design</a>
+                <a href="about">Custome development</a>
               </li>
               <li>
-                <a href="about">Web design</a>
+                <a href="about">Website design</a>
               </li>
               <li>
-                <a href="about">Web development</a>
+                <a href="about">E-commers app</a>
               </li>
+              <li>
+                <a href="about">Social media app</a>
+              </li>
+
             </ul>
             <ul className={footerStyles.box}>
               <li className={footerStyles.link_name}>Account</li>

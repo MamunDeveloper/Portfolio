@@ -1,13 +1,11 @@
 /* .section {
   background-color: red;
 } */
-#contactSection {
-  padding: 1rem 6rem;
-  margin: 0 auto;
-  text-align: center;
-}
+
 
 #contactSection {
+  padding: 1rem 6rem;
+  text-align: center;
   margin: 6rem auto;
   display: flex;
   flex-direction: column;
@@ -22,11 +20,13 @@
   border: none;
   background: white
 }
-#meetCard {
-}
+
+#meetCard {}
+
 #pitchCard {
   text-align: start;
 }
+
 #pitchCard .PitchInps {
   border: none;
   outline: none;
@@ -38,7 +38,8 @@
 .PitchInps::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 .contact_form {
@@ -54,6 +55,7 @@
 .input_field {
   margin-bottom: 1rem;
 }
+
 .formInputs {
   color: green;
 }
@@ -88,6 +90,7 @@
 .mapping {
   width: 100%;
 }
+
 @media screen and (max-width:410px) {
   .label {
     /* font-size: 0.5rem; */

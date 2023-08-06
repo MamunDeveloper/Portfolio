@@ -10,9 +10,9 @@ function Nav() {
           {" "}
           <Link href="/">Home</Link>{" "}
         </li>
-        <li className={styles.nav_li}>
+        <li className={styles.nav_li} id={styles.serviceMenu}>
           {" "}
-          <Link href="/">Services</Link>{" "}
+          <Link href="services">Services</Link>{" "}
         </li>
         <li className={styles.nav_li}>
           {" "}

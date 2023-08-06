@@ -9,30 +9,24 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --primary-glow: conic-gradient(from 180deg at 50% 50%,
+      #16abff33 0deg,
+      #0885ff33 55deg,
+      #54d6ff33 120deg,
+      #0071ff33 160deg,
+      transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0));
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+  --tile-border: conic-gradient(#00000080,
+      #00000040,
+      #00000030,
+      #00000020,
+      #00000010,
+      #00000010,
+      #00000080);
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -47,24 +41,20 @@
     --background-end-rgb: 0, 0, 0;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+    --secondary-glow: linear-gradient(to bottom right,
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0.3));
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+    --tile-border: conic-gradient(#ffffff80,
+        #ffffff40,
+        #ffffff30,
+        #ffffff20,
+        #ffffff10,
+        #ffffff10,
+        #ffffff80);
 
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
@@ -89,26 +79,29 @@ body {
   color: white;
   background-color: #21084b;
 }
+
 .sepDiv {
   margin-bottom: 8rem;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .flexBox {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .flexColumn {
   display: flex;
   flex-direction: column;
 }
 
 /* For headings */
-.heading span {
-  color: red;
-}
-.subHeading span {
-  color: red;
-}
 .heading span,
 .subHeading span {
   color: red;
@@ -116,8 +109,7 @@ body {
 
 /* Webfolio and clients review cards */
 
-.cardBox {
-}
+.cardBox {}
 
 .webCards,
 .testimonialCard,
@@ -129,6 +121,7 @@ body {
   margin: 1rem 0;
   transition: all 0.6s ease-in-out;
 }
+
 .webCards .heading,
 .testimonialCard .heading {
   text-align: center;
@@ -158,12 +151,15 @@ body {
   word-spacing: 3px;
   text-align: justify;
 }
+
 .textCenter {
   text-align: center;
 }
+
 .points {
   color: #20d907;
 }
+
 .pera {
   line-height: 23px;
 }
@@ -173,10 +169,12 @@ li {
   list-style: none;
   margin: 5px 0;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
   color: red;
 }
@@ -203,9 +201,17 @@ button {
 
 button:hover {
   background-color: #fff;
-  /* border: 0.1rem solid #161617; */
   color: #101011;
   transition-duration: 0.5s;
+}
+
+.whiteBtn{
+  background-color: white;
+  color: black;
+}
+.whiteBtn:hover{
+  background-color: #401b82;
+  color: white;
 }
 
 .profilePic {
@@ -223,9 +229,11 @@ button:hover {
   .pictures {
     width: 150px;
   }
+
   .justifyText {
     word-wrap: 2px;
   }
+
   .profilePic {
     width: 150px;
     height: 120px;
@@ -237,6 +245,7 @@ button:hover {
     border: none;
   }
 }
+
 @media screen and (max-width: 260px) {
   .testimonialCard {
     width: 204px;

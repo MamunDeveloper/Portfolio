@@ -18,7 +18,7 @@ function MainCards() {
         <p>See all of my projects to understand better about my skill's.</p>
       </a>
 
-      <a href="#" className={styles.card} rel="noopener noreferrer">
+      <a href="services" className={styles.card} rel="noopener noreferrer">
         <h2>
           Services <span>-&gt;</span>
         </h2>

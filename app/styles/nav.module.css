@@ -23,6 +23,20 @@
   margin: 0 2rem;
 }
 
+#serviceMenu{
+  
+}
+#serviceMenu:hover #dropDownMenu {
+  visibility: visible;
+  opacity: 1;
+}
+#dropDownMenu{
+  visibility: hidden;
+  color: white;
+  position: absolute;
+  opacity: 0;
+}
+
 @media screen and (max-width:425px) {
 
   .navBox {
