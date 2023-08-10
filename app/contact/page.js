@@ -1,15 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-
 import styles from "@/app/contact/contact.module.css";
 import ContactForm from "../components/contactForm";
 import FAQSection from "../components/faqSection";
-import {
-  FaArrowAltCircleDown,
-  FaArrowDown,
-  FaBeer,
-  FaPhone,
-} from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 
 function page() {
   return (

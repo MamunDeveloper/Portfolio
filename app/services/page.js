@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "@/app/services/services.module.css";
 import Image from "next/image";
 import ServiceCard from "../components/serviceCard";
@@ -6,7 +7,6 @@ import ServicePageImage from "@/app/images/service page image.png";
 import branding from "@/app/images/branding.jpg";
 import allDevice from "@/app/images/all devices.png";
 import Ecommerse from "@/app/images/E-commerse.png";
-import Link from "next/link";
 
 function Page() {
   return (
