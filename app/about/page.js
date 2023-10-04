@@ -11,10 +11,12 @@ import profilePic from "@/app/images/Portfolio profile pic.png";
 import watchFlixImg from "@/app/images/WatchFlix Home Page.png";
 import portfolioImg from "@/app/images/portfolio website ss.png";
 import clientPic1 from "@/app/images/client1.jpg";
+import ToDoAppImag from "@/app/images/ToDo App thumbnail.png";
 
 function About() {
   return (
     <section id={styles.aboutSection} className="justifyText">
+      {/* Intro section */}
       <div id={styles.introBox} className={`sepDiv`}>
         <h1>From Vision to Reality</h1>
         <h3>Transforming Ideas into Stunning Websites.</h3>
@@ -87,6 +89,7 @@ function About() {
         </ul>
       </div>
 
+      {/* Showcase section */}
       <div id={styles.showcase} className={`sepDiv`}>
         <h2 className="textCenter">Webfolio</h2>
         <h3 className="textCenter">A Gallery of Websites Crafted by Me</h3>
@@ -105,8 +108,18 @@ function About() {
             ImageSrc={watchFlixImg}
             cssClass={"webCards"}
           />
+          <Card
+            link={"https://to-do-app-five-eta.vercel.app/"}
+            Title={"ToDo App"}
+            text={
+              "Write down your tasks, complete one by one. Everyday go forward to success!"
+            }
+            ImageSrc={ToDoAppImag}
+            cssClass={"webCards"}
+          />
         </div>
       </div>
+      {/* My strategy section */}
       <div className="textCenter sepDiv">
         <h2>How I Approach a project</h2>
         <h3>My methodology</h3>
@@ -157,6 +170,7 @@ function About() {
         </p>
       </div>
 
+      {/* testimonialSection */}
       <div className="sepDiv textCenter" id="testimonialSection">
         <h2>My clients review</h2>
         <h3>What they say</h3>
