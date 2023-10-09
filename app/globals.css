@@ -218,3 +218,59 @@ button:hover {
     margin-bottom: 3rem;
   }
 }
+
+/* Webfolio and clients review cards */
+
+/* .cardBox {} */
+.webCards,
+.testimonialCard,
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  word-spacing: 1px;
+  margin: 1rem 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.webCards .heading,
+.testimonialCard .heading {
+  text-align: center;
+}
+
+.testimonialCard,
+.cards {
+  border: 2px solid;
+  width: 250px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 2rem 2rem;
+  border-radius: 5px;
+}
+
+.testimonialCard:hover,
+.cards:hover {
+  background-color: rgb(242, 247, 247);
+  color: rgb(17, 17, 18);
+  border: 2px solid rgb(19, 20, 18);
+}
+
+/* Responsiveness */
+@media screen and (min-width: 790px) {
+  .webCards {
+    margin: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .testimonialCard {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .testimonialCard {
+    width: 204px;
+  }
+}

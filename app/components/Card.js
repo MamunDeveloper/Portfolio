@@ -4,7 +4,7 @@ import styles from "@/app/styles/webCard.module.css";
 
 function Card({ ImageSrc, link, Title, text, cssClass, name }) {
   return (
-    <div className={`${styles[cssClass]}`}>
+    <div className={cssClass}>
       <Image src={ImageSrc} alt="Website image" width={200} height={150} />
       <Link href={link} target="__blank" className={styles.heading}>
         {Title}
