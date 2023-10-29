@@ -78,6 +78,7 @@ function About() {
           and discuss further. <br />
         </p>
       </div>
+      {/* Skills section */}
       <div id={`${styles.skillsBox}`} className={`sepDiv`}>
         <h2 className="textCenter">My skill's</h2>
         <h3 className="textCenter">My expertise in technologies</h3>
@@ -107,6 +108,7 @@ function About() {
             text={"Movies, shows and series website"}
             ImageSrc={watchFlixImg}
             cssClass={"webCards"}
+            // backgroundColor={"#80abd5"}
           />
           <Card
             link={"https://to-do-app-five-eta.vercel.app/"}
