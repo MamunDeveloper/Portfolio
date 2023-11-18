@@ -11,8 +11,8 @@ function Skills({ data = [], heading, subHeading }) {
           <h3>{subHeading}</h3>
         </>
       )}
-      {skillsData.map((item) => (
-        <li>
+      {skillsData.map((item, index) => (
+        <li key={index + 1}>
           <label htmlFor="vol">{item.name}</label>
           <input
             type="range"
