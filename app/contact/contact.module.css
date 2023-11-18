@@ -13,6 +13,26 @@
 }
 
 /* Cards */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  word-spacing: 1px;
+  transition: all 0.7s;
+  border: 2px solid;
+  width: 250px;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 2rem 2rem;
+  border-radius: 5px;
+}
+.cards:hover {
+  background-color: rgb(242, 247, 247);
+  color: rgb(17, 17, 18);
+  border: 2px solid rgb(19, 20, 18);
+}
+
 #mapCard {
   padding: 0;
   justify-content: center;
@@ -35,10 +55,8 @@
 }
 
 .PitchInps::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1;
-  /* Firefox */
 }
 
 .contact_form {
@@ -47,7 +65,6 @@
   padding: 25px 3.2rem;
   box-shadow: rgb(79 79 194 / 38%) 5px 5px 17px;
   text-align: left;
-  /* margin: auto; */
   border: 2px solid;
 }
 
@@ -100,11 +117,8 @@
     height: 33vh;
   }
 }
-
-/* For FAQ's */
-
-/* .questions{
-  height: 5vh;
-  overflow: hidden;
-  border: 2px solid white;
-} */
+@media screen and (max-width: 700px) {
+  #contactSection {
+    padding: 1rem 2rem;
+  }
+}

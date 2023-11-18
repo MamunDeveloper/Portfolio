@@ -1,17 +1,14 @@
 import React from "react";
 import styles from "@/app/about/about.module.css";
-// import global from '@/app/page.module.css'
 import Image from "next/image";
 import Link from "next/link";
-import Card from "../components/Card";
-import SkillsList from "../components/skillsList";
+
+import Skills from "../components/skills/skills";
+import { skillsData } from "@/app/data/skillsData";
 
 // Images
 import profilePic from "@/app/images/Portfolio profile pic.png";
-import watchFlixImg from "@/app/images/WatchFlix Home Page.png";
-import portfolioImg from "@/app/images/portfolio website ss.png";
-import clientPic1 from "@/app/images/client1.jpg";
-import ToDoAppImag from "@/app/images/ToDo App thumbnail.png";
+import FormBox from "../components/formBox/formBox";
 
 function About() {
   return (
@@ -78,49 +75,14 @@ function About() {
           and discuss further. <br />
         </p>
       </div>
-      {/* Skills section */}
-      <div id={`${styles.skillsBox}`} className={`sepDiv`}>
-        <h2 className="textCenter">My skill's</h2>
-        <h3 className="textCenter">My expertise in technologies</h3>
-        <ul>
-          <SkillsList skill={"HTML & CSS"} value={98} />
-          <SkillsList skill={"JavaScript"} value={97} />
-          <SkillsList skill={"React.js"} value={95} />
-          <SkillsList skill={"Next.js"} value={95} />
-        </ul>
-      </div>
 
-      {/* Showcase section */}
-      <div id={styles.showcase} className={`sepDiv`}>
-        <h2 className="textCenter">Webfolio</h2>
-        <h3 className="textCenter">A Gallery of Websites Crafted by Me</h3>
-        <div id={styles.webCardsBox}>
-          <Card
-            link={"https://portfolio-chi-opal-60.vercel.app/"}
-            Title={"PortFolio"}
-            text={"My Portfolio website"}
-            ImageSrc={portfolioImg}
-            cssClass={"webCards"}
-          />
-          <Card
-            link={"https://watch-flix-new.vercel.app/"}
-            Title={"WatchFlix"}
-            text={"Movies, shows and series website"}
-            ImageSrc={watchFlixImg}
-            cssClass={"webCards"}
-            // backgroundColor={"#80abd5"}
-          />
-          <Card
-            link={"https://to-do-app-five-eta.vercel.app/"}
-            Title={"ToDo App"}
-            text={
-              "Write down your tasks, complete one by one. Everyday go forward to success!"
-            }
-            ImageSrc={ToDoAppImag}
-            cssClass={"webCards"}
-          />
-        </div>
-      </div>
+      {/* Skills section */}
+      <Skills
+        data={skillsData}
+        heading={"My skill's"}
+        subHeading={"My expertise in technologies"}
+      ></Skills>
+
       {/* My strategy section */}
       <div className="textCenter sepDiv">
         <h2>How I Approach a project</h2>
@@ -172,22 +134,7 @@ function About() {
         </p>
       </div>
 
-      {/* testimonialSection */}
-      <div className="sepDiv textCenter" id="testimonialSection">
-        <h2>My clients review</h2>
-        <h3>What they say</h3>
-        <div className="flexBox">
-          <Card
-            link={""}
-            name={"Jack Poul"}
-            text={
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam voluptatibus iusto consectetur quis quae non enim reprehenderit a minus excepturi cumque vero, cum explicabo?"
-            }
-            ImageSrc={clientPic1}
-            cssClass={"testimonialCard"}
-          />
-        </div>
-      </div>
+      <FormBox></FormBox>
     </section>
   );
 }

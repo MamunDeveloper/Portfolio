@@ -10,7 +10,7 @@ export const metadata = {
 
 const Footer = () => {
   function HandleSubscribe(e) {
-    alert("Thanks !!! Soon you will be to subscribe this website.");
+    alert("Thanks you for login");
   }
 
   return (
@@ -70,7 +70,6 @@ const Footer = () => {
               <li>
                 <a href="about">Social media app</a>
               </li>
-
             </ul>
             <ul className={footerStyles.box}>
               <li className={footerStyles.link_name}>Account</li>
@@ -104,7 +103,7 @@ const Footer = () => {
               </li>
             </ul>
             <ul className={`${footerStyles.box} ${footerStyles["input-box"]}`}>
-              <li className={footerStyles.link_name}>Subscribe</li>
+              <li className={footerStyles.link_name}>Login</li>
               <li>
                 <input
                   type="text"
@@ -113,11 +112,7 @@ const Footer = () => {
                 />
               </li>
               <li>
-                <input
-                  type="button"
-                  value="Subscribe"
-                  onClick={HandleSubscribe}
-                />
+                <input type="button" value="Login" onClick={HandleSubscribe} />
               </li>
             </ul>
           </div>

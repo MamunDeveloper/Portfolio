@@ -24,26 +24,6 @@
   color: red;
 }
 
-#aboutSection #skillsBox li {
-  list-style: none;
-  margin: 1rem 0;
-  transition: all 0.6s;
-}
-#aboutSection #skillsBox input {
-  width: 25%;
-}
-#aboutSection li:hover {
-  color: red;
-}
-
-/* WebCards */
-#webCardsBox {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 2rem 0;
-}
-
 @media screen and (max-width: 800px) {
   .mainIntro {
     flex-wrap: wrap-reverse;

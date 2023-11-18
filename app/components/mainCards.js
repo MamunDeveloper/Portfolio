@@ -8,10 +8,10 @@ function MainCards() {
         <h2>
           About Me<span>-&gt;</span>
         </h2>
-        <p>Small introduction about me.</p>
+        <p>Get to know me and my work better.</p>
       </a>
 
-      <a href="#" className={styles.card} rel="noopener noreferrer">
+      <a href="myWorks" className={styles.card} rel="noopener noreferrer">
         <h2>
           My Works <span>-&gt;</span>
         </h2>

@@ -1,0 +1,16 @@
+.skillsBox h2,
+.skillsBox h3 {
+  text-align: center;
+}
+
+.skillsBox li {
+  list-style: none;
+  margin: 1rem 0;
+  transition: all 0.6s;
+}
+.skillsBox input {
+  width: 25%;
+}
+.skillsBox li:hover {
+  color: red;
+}
