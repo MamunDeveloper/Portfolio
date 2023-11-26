@@ -32,6 +32,7 @@
   outline: none;
   border-bottom: 1px solid #060505;
   display: block;
+  font-weight: bold;
 }
 .submit_button {
   margin: 1rem 0;
@@ -62,6 +63,11 @@
 }
 .social_box {
   margin: 1rem 0;
+}
+
+.social_box .detail_box_icons {
+  font-size: 2rem;
+  width: 1.4rem;
 }
 
 .detail_box_icons {
