@@ -110,6 +110,7 @@ body {
 .flexColumn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 /* For headings */
@@ -185,6 +186,21 @@ button:hover {
 .whiteBtn:hover {
   background-color: #060606;
   color: white;
+}
+
+.btn1 {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.btn1:hover {
+  color: white;
+  background-color: grey;
 }
 
 /* For icons */

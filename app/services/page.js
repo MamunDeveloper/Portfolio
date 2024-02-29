@@ -8,6 +8,7 @@ import branding from "@/app/images/branding.jpg";
 import customeService from "@/app/images/service page image.png";
 import allDevice from "@/app/images/all devices.png";
 import Ecommerse from "@/app/images/E-commerse.png";
+import idea from "@/app/images/get an idea.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -55,7 +56,7 @@ function Page() {
             success!
           </p>
           <Link href={"https://www.fiverr.com/s/3QV5zk"} target="blank">
-            <button id={styles.introBtn}>Let's talk</button>
+            <button className="btn1">Let's talk</button>
           </Link>
         </div>
         <div id={styles.introImageBox}>
@@ -94,9 +95,7 @@ function Page() {
       </section>
 
       <Link href={"https://www.fiverr.com/s/6pyaVw"} target="blank">
-        <button id={styles.gigPageBtn} className="button">
-          Place Order
-        </button>
+        <button className="button btn1">Place Order</button>
       </Link>
 
       {selectedId && (
@@ -122,6 +121,25 @@ function Page() {
           </motion.div>
         </div>
       )}
+      <section id={styles.work_demo}>
+        <div id={styles.textBox} className="flexColumn">
+          <h2>Some Of My Projects</h2>
+          <h1>Get More Confidence</h1>
+          <h1>Take A Look At My Works</h1>
+          <Link href={""}>
+            <button className="btn1">See Works</button>
+          </Link>
+        </div>
+        <div id={styles.imageBox} className="flex">
+          <Image
+            src={idea}
+            width={450}
+            height={"auto"}
+            id={styles.ideaImg}
+            alt="Demo section Image"
+          />
+        </div>
+      </section>
     </section>
   );
 }

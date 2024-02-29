@@ -19,24 +19,6 @@
   border-radius: 10px;
 }
 
-#gigPageBtn,
-#introBtn {
-  border-radius: 5px;
-  padding: 1rem 2rem;
-  margin: 1rem 0;
-  background-color: white;
-  color: black;
-  font-weight: bolder;
-  font-size: 1rem;
-  transition: all 0.5s;
-}
-
-#gigPageBtn:hover,
-#introBtn:hover {
-  color: white;
-  background-color: grey;
-}
-
 /* SERVICES SECTION */
 #servicesBox {
   margin: 3rem 0;
@@ -101,6 +83,34 @@
   margin-bottom: 0.5rem;
 }
 
+/* WORK DEMO SECTION */
+#work_demo {
+  width: 100%;
+  display: flex;
+  margin: 6rem 0;
+}
+#work_demo #ideaImg {
+  max-width: 450px;
+  height: auto;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+#work_demo #imageBox,
+#work_demo #textBox {
+  width: 50%;
+}
+#work_demo #textBox {
+  text-align: start;
+}
+#work_demo h2 {
+  margin-bottom: 1rem;
+}
+#work_demo h1 {
+  font-size: 1.9rem;
+  margin-top: 0.5rem;
+}
+
 /* FOR TABLATE VIEW */
 @media screen and (max-width: 1280px) {
   #servicesBox {
@@ -112,6 +122,19 @@
   }
   #modal {
     width: 70%;
+  }
+  #work_demo {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  #work_demo #imageBox,
+  #work_demo #textBox {
+    width: 100%;
+    text-align: center;
+  }
+  #work_demo #ideaImg {
+    max-width: 500px;
   }
 }
 
