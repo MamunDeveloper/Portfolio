@@ -15,26 +15,26 @@
   margin-bottom: 5em;
   min-height: 70vh;
 }
-#introBtn {
-  margin-top: 1rem;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-}
 #introBox #introImage {
   border-radius: 10px;
 }
 
-#gigPageBtn {
+#gigPageBtn,
+#introBtn {
   border-radius: 5px;
   padding: 1rem 2rem;
+  margin: 1rem 0;
   background-color: white;
   color: black;
   font-weight: bolder;
   font-size: 1rem;
+  transition: all 0.5s;
 }
 
-#gigPageBtn:hover {
-  color: rgb(26 52 251);
+#gigPageBtn:hover,
+#introBtn:hover {
+  color: white;
+  background-color: grey;
 }
 
 /* SERVICES SECTION */
