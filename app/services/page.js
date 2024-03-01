@@ -11,10 +11,16 @@ import Ecommerse from "@/app/images/E-commerse.png";
 import idea from "@/app/images/get an idea.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  appearFromLeftAnimation,
+  smallToBigAnimation,
+  appearFromBottomAnimation,
+} from "../Animations/framerAnimation";
 
 function Page() {
   const [selectedId, setSelectedId] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   const cards = [
     {
@@ -41,9 +47,9 @@ function Page() {
   ];
 
   return (
-    <section id={styles.serviceSection}>
-      <div id={styles.introBox} className="flex">
-        <div id={styles.introTextBox}>
+    <main id={styles.serviceSection}>
+      <section id={styles.introBox} className="flex">
+        <motion.div id={styles.introTextBox} {...appearFromBottomAnimation}>
           <h1 className="heading ">
             <span>Empower Your Brand</span> <br /> Expert Web Development at
             Your Fingertips!
@@ -58,7 +64,7 @@ function Page() {
           <Link href={"https://www.fiverr.com/s/3QV5zk"} target="blank">
             <button className="btn1">Let's talk</button>
           </Link>
-        </div>
+        </motion.div>
         <div id={styles.introImageBox}>
           <Image
             id={styles.introImage}
@@ -68,7 +74,7 @@ function Page() {
             alt="Service image"
           />
         </div>
-      </div>
+      </section>
 
       <h1>Services I Offer</h1>
       <section id={styles.servicesBox}>
@@ -122,15 +128,27 @@ function Page() {
         </div>
       )}
       <section id={styles.work_demo}>
-        <div id={styles.textBox} className="flexColumn">
-          <h2>Some Of My Projects</h2>
-          <h1>Get More Confidence</h1>
-          <h1>Take A Look At My Works</h1>
-          <Link href={""}>
-            <button className="btn1">See Works</button>
+        <motion.div
+          id={styles.textBox}
+          className="flexColumn"
+          {...appearFromLeftAnimation}
+        >
+          <h2>My Projects</h2>
+          <h1>Increase Your Confidence</h1>
+          <h1>By Exploring My Projects</h1>
+          <Link
+            href={"myWorks"}
+            style={{ width: "fit-content" }}
+            id={styles.work_btn}
+          >
+            <button className="btn1">Projects</button>
           </Link>
-        </div>
-        <div id={styles.imageBox} className="flex">
+        </motion.div>
+        <motion.div
+          id={styles.imageBox}
+          className="flex"
+          {...smallToBigAnimation}
+        >
           <Image
             src={idea}
             width={450}
@@ -138,9 +156,9 @@ function Page() {
             id={styles.ideaImg}
             alt="Demo section Image"
           />
-        </div>
+        </motion.div>
       </section>
-    </section>
+    </main>
   );
 }
 
