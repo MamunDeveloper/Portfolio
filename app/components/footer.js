@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import footerStyles from "@/app/styles/footer.module.css";
-import { FaFacebookF, FaGithub, FaFacebookMessenger } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaFacebookMessenger } from "react-icons/fa";
 import Link from "next/link";
 
 export const metadata = {
@@ -26,7 +26,7 @@ const Footer = () => {
               <Link href="https://www.facebook.com/grh.mamun" target="__blank">
                 <i>
                   {" "}
-                  <FaFacebookF />{" "}
+                  <FaFacebook />{" "}
                 </i>
               </Link>
               <Link href="https://github.com/MamunDeveloper" target="__blank">
