@@ -1,0 +1,46 @@
+.icons_ul {
+  width: 100px;
+  transform: translateX(50px);
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+}
+.icons_li {
+  box-sizing: border-box;
+  width: 100px;
+  height: 50px;
+  font-size: x-large;
+  margin: 0.5rem 0.2rem;
+  border: 2px solid white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.8s ease-out;
+  cursor: pointer;
+}
+.icons {
+  width: 22px;
+  height: 0.9em;
+  color: white;
+  vertical-align: 0em;
+}
+
+/* For icons */
+#fb_icon:hover {
+  color: rgb(0, 26, 255);
+}
+#insta_icon:hover {
+  color: rgb(255, 0, 200);
+}
+#XTwitter_icon:hover {
+  color: rgb(10, 10, 10);
+}
+
+@media screen and (max-width: 425px) {
+  .icons_li:hover {
+    transform: translate(-30px);
+  }
+  .icons_ul {
+    top: 40%;
+  }
+}
