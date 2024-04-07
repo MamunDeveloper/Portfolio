@@ -49,7 +49,7 @@ function HeroSection() {
             priority={true}
             width={500}
             height={500}
-            className="border-b-4 border-blue-600 w-auto max-w-5xl"
+            className="border-b-4 border-blue-600"
           />
         </motion.div>
       </div>
