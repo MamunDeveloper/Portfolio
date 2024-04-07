@@ -20,7 +20,7 @@ function AboutMeSection() {
   return (
     <section
       id="about-me"
-      className="max-container w-full flex flex-col justify-center pt-20 pb-8 px-8 text-white"
+      className="max-container w-full flex flex-col justify-center pt-20 pb-8 px-8 text-white overflow-hidden"
     >
       <div className="">
         <div className=" flex flex-col justify-center items-center gap-4 w-full">

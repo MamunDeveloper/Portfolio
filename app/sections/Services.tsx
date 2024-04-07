@@ -18,7 +18,7 @@ function Services() {
   const [selectedService, setSelectedService] = useState<Card | null>(null);
 
   return (
-    <section id="services" className="flex flex-col mt-20">
+    <section id="services" className="flex flex-col mt-20 overflow-hidden">
       <motion.h2
         className=" text-white text-3xl font-bold text-center mb-8"
         {...fromLeft}

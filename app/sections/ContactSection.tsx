@@ -18,7 +18,7 @@ function ContactSection() {
   const spanClasses =
     "absolute -top-10 md:top-0 md:-right-[60%] z-20 origin-left scale-0 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium shadow-md transition-all duration-300 ease-in-out group-hover:scale-100";
   return (
-    <section className="text-white max-container pt-40" id="contact">
+    <section className="text-white max-container pt-40 overflow-hidden" id="contact">
       <motion.h2 className=" text-3xl font-bold text-center" {...fromRight}>
         Let's <span className=" text-red-600">Dicuss</span> Your Project
       </motion.h2>

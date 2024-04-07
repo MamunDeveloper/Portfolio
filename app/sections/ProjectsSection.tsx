@@ -15,7 +15,7 @@ function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="max-container w-full flex flex-col justify-center pt-20 pb-8 px-8"
+      className="max-container w-full flex flex-col justify-center pt-20 pb-8 px-8 overflow-hidden"
     >
       <motion.h2
         className=" text-3xl text-white text-center mb-8 font-bold"
@@ -37,9 +37,9 @@ function ProjectsSection() {
               whileHover={{ opacity: 1 }}
             >
               <p className=" text-white font-bold text-center text-xl pt-4">
-                {project.projectType}
+                {project.date}
               </p>
-              <p className=" pt-2 px-4 text-gray-200 text-lg max-sm:overflow-y-scroll">
+              <p className=" pt-2 px-4 text-gray-200 text-lg max-lg:overflow-y-scroll">
                 {project.description}
               </p>
               <button className=" bg-slate-400 py-2 text-black text-lg font-bold">
@@ -58,7 +58,7 @@ function ProjectsSection() {
               </div>
               <div className="px-8 py-4 text-lg font-bold flex justify-between">
                 <p>{project.title}</p>
-                <p>{project.date}</p>
+                <p>{project.projectType}</p>
               </div>
             </motion.div>
           </motion.div>

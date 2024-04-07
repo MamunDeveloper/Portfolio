@@ -46,9 +46,10 @@ function HeroSection() {
           <Image
             src={profileImg}
             alt="profile image"
+            priority={true}
             width={500}
             height={500}
-            className="border-b-4 border-blue-600"
+            className="border-b-4 border-blue-600 w-auto max-w-5xl"
           />
         </motion.div>
       </div>
