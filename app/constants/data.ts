@@ -3,6 +3,12 @@ import allDevice from "@/app/assets/images/responsive design.png";
 import Ecommerse from "@/app/assets/images/E-commerse solution.png";
 import nikeClone from "@/app/assets/images/nike-clone.jpg";
 import campfire from "@/app/assets/images/campfire.jpg";
+import cresturent from "@/app/assets/images/cresturent.jpg";
+import StepAhead from "@/app/assets/images/StepAhead.jpg";
+import WeatherWiz from "@/app/assets/images/WeatherWiz.jpg";
+import notes from "@/app/assets/images/noets.jpg";
+import SonicScript from "@/app/assets/images/SonicScript.jpg";
+
 import profileIcon from "@/app/assets/icons/profile.png";
 import experience from "@/app/assets/icons/experience.png";
 import skills from "@/app/assets/icons/skill.png";
@@ -72,14 +78,67 @@ const services = [
 
 const projects = [
   {
+    date: "25/03/2024",
     title: "Nike Clone",
+    description:
+      "I cloned this project from YouTube and updated it with animations like hover, click, and PopUp using the 'framer motion' library. Also, added a cool feature in the customer review section. Check it out!",
     projectType: "Ecommerce",
     imgage: nikeClone,
+    link: "https://nike-clone-aoubq4eh0-md0465981gmailcoms-projects.vercel.app/",
   },
   {
+    date: "10/03/2024",
     title: "CampFire",
+    description:
+      "It's a traveling app's website. Although it's a clone project, I've implemented numerous updates such as animations. Take a good look at it; check out the link below.",
     projectType: "Travel",
     imgage: campfire,
+    link: "https://camp-fire-opal.vercel.app/",
+  },
+  {
+    date: "21/01/2024",
+    title: "Cresturent",
+    description:
+      "This is a restaurant website with multiple pages and cool features. It was a huge project that took a long time to build, but I learned a lot along the way.",
+    projectType: "Restaurant",
+    imgage: cresturent,
+    link: "https://cresturent.vercel.app/",
+  },
+  {
+    date: "14/01/2024",
+    title: "Notes",
+    description:
+      "A note-taking web app to help you manage your notes. I am very excited to hear any update requests from you!",
+    projectType: "Note",
+    imgage: notes,
+    link: "https://note-app-theta-green.vercel.app/",
+  },
+  {
+    date: "02/12/2023",
+    title: "StepAhead",
+    description:
+      "It's a to-do list app for daily tasks. It helps track your work and manage them. Please let me know if you want any updates; I would be pleased if it helps you!",
+    projectType: "To-Do",
+    imgage: StepAhead,
+    link: "https://to-do-app-five-eta.vercel.app/",
+  },
+  {
+    date: "03/11/2023",
+    title: "SonicScript",
+    description:
+      "Text-to-speech converter app. Easily convert your text and use it anywhere with simplicity.",
+    projectType: "Text-To-Speech",
+    imgage: SonicScript,
+    link: "https://speech-to-text-reactapp.vercel.app/",
+  },
+  {
+    date: "16/10/2023",
+    title: "WeatherWiz",
+    description:
+      "A simple weather app that uses an API to provide real-time weather updates.",
+    projectType: "Weather",
+    imgage: WeatherWiz,
+    link: "https://weather-app-theta-topaz-71.vercel.app/",
   },
 ];
 

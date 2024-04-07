@@ -46,7 +46,7 @@ body {
     color: red;
   }
   .button-gray {
-    @apply bg-slate-600 m-auto py-2 px-8 rounded-md text-lg cursor-pointer hover:bg-slate-500;
+    @apply bg-slate-600 m-auto py-2 px-8 rounded-md text-lg text-white cursor-pointer hover:bg-slate-500 ;
   }
 }
 @layer {
